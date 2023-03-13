@@ -1,0 +1,23 @@
+body {
+  background-color: #151517;
+  background-image: url('../upload/images/all/body-background-resized.webp');
+  background-size: auto;
+  font-family: 'Gilroy';
+  background-position: center -157px;
+  background-repeat: repeat-y;
+  min-height: 700vh;
+}
+
+.wrap {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: block;
+
+  & .header_top-line {
+    background-color: #111111;
+  }
+}

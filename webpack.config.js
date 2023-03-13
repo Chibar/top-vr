@@ -7,7 +7,7 @@ const path = require("path");
 const mode = process.env.NODE_ENV;
 
 const projectPath = path.resolve(__dirname, "src");
-const distPath = path.resolve(__dirname, "dist");
+const distPath = path.resolve(__dirname, "public_html");
 
 module.exports = {
   mode: mode,

@@ -21,20 +21,10 @@
         <meta name="theme-color" content="#ffffff">
     </head>
     <body>
-        <header>
-            <div class="header_top-line">
-                <div class="wrap">
-                    <div class="header_top-line_content">
-                        
-                    </div>
-                </div>
-            </div>
-        </header>
+        <%= require('html-loader!./header.html').default %>
         <div class="body">
 
         </div>
-        <footer>
-
-        </footer>
+        <%= require('html-loader!./footer.html').default %>
     </body>
 </html>

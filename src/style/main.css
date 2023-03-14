@@ -184,10 +184,19 @@ header {
   height: 2px;
   background-color: #fff;
 }
-.header-second_line-menu-item.has_children > a{
+.header-second_line-menu-item,
+.header-second_line-menu-catalog_item{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.has_children .header-second_line-menu-item-wrapper{
+  display: flex;
+  column-gap: 10px;
+}
+.has_children .header-second_line-menu-item-wrapper .icon-wrapper{
   display: flex;
   align-items: center;
-  column-gap: 10px;
 }
 .header-second_line-menu-ul-inner{
   display: none;

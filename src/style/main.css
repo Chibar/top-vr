@@ -807,7 +807,8 @@ body {
   }
   .sliding_menu-social_icons-and-language .sliding_menu-language,
   .sliding_menu-address,
-  .sliding_menu-callback {
+  .sliding_menu-callback,
+  .sliding_menu-fly_links {
     display: none;
   }
 }

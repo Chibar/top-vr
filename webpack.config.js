@@ -13,6 +13,10 @@ module.exports = {
   mode: mode,
   entry: {
     index: `${projectPath}/js/index.js`,
+    fonts: `${projectPath}/js/fonts.js`,
+    desktop: `${projectPath}/js/desktop.js`,
+    responsive: `${projectPath}/js/responsive.js`,
+    banner_slider: `${projectPath}/js/banner_slider.js`,
   },
   output: {
     path: distPath,

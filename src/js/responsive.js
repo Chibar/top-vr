@@ -1,0 +1,1 @@
+import '../style/responsive.css'

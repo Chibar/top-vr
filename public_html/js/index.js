@@ -2,7 +2,6 @@
 /******/ 	"use strict";
 var __webpack_exports__ = {};
 
-console.log('index');
 document.getElementById('header-logo_line-search-form').addEventListener('submit', function (e) {
   e.preventDefault();
   const formData = new FormData(this);

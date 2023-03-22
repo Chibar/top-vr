@@ -1,7 +1,5 @@
 import '../style/main.css'
 
-console.log('index');
-
 document.getElementById('header-logo_line-search-form').addEventListener('submit', function (e) {
     e.preventDefault()
     const formData = new FormData(this);
@@ -97,3 +95,4 @@ if (tabletSearchOpener) {
         }
     })
 }
+

@@ -8633,13 +8633,13 @@ function EffectCards({
 
 
 
-;// CONCATENATED MODULE: ./src/js/banner_slider.js
+;// CONCATENATED MODULE: ./src/js/advantages.js
 
 
 
 
 
-const swiper = new core('.banner_slider .swiper', {
+const swiper = new core('.advantages_block .swiper', {
   // configure Swiper to use modules
   modules: [Navigation, Pagination],
   pagination: {
@@ -8654,11 +8654,15 @@ const swiper = new core('.banner_slider .swiper', {
     prevEl: '.swiper-button-prev-custom',
     enabled: false
   },
+  slidesToShow: 2,
+  slidesToScroll: 2,
   breakpoints: {
     1288: {
       navigation: {
         enabled: true
-      }
+      },
+      slidesToShow: 4,
+      slidesToScroll: 4
     }
   }
 });

@@ -85,6 +85,7 @@ img {
   max-width: 1288px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .backdrop {
@@ -544,7 +545,12 @@ body {
 .swiper-button-next-custom {
   right: 0;
 }
-
+.swiper-autoheight .swiper-wrapper{
+  padding-bottom: 20px;
+}
+.slider_wrap .swiper-horizontal>.swiper-pagination-bullets{
+    bottom: 0;
+}
 .swiper-pagination-bullet-custom {
   display: inline-block;
   height: 100%;
@@ -613,4 +619,32 @@ body {
   line-height: 140%;
   color: #fff;
   width: 50%;
+}
+.border-gradient{
+  position: relative;
+}
+.border-gradient:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px; 
+  padding: 2px; 
+  background: linear-gradient(88.37deg, #64398e 20.21%, #2f49d3 102.29%); 
+  -webkit-mask: 
+      -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, 
+      -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)); 
+  -webkit-mask: 
+      linear-gradient(#fff 0, #fff 0) content-box, 
+      linear-gradient(#fff 0, #fff 0); 
+  -webkit-mask: 
+      -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, 
+      -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)); 
+  -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
 }

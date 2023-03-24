@@ -8648,23 +8648,42 @@ const swiper = new core('.advantages_block .swiper', {
     bulletClass: 'swiper-pagination-bullet-custom',
     bulletActiveClass: 'swiper-pagination-bullet-custom-active'
   },
-  autoHeight: true,
+  autoHeight: false,
   navigation: {
     nextEl: '.swiper-button-next-custom',
-    prevEl: '.swiper-button-prev-custom',
-    enabled: false
+    prevEl: '.swiper-button-prev-custom'
   },
-  slidesToShow: 2,
-  slidesToScroll: 2,
+  // slidesPerGroup: 2,
+  // slidesPerView: 2,
+  slidesPerView: 'auto',
+  slidesPerGroup: 1,
+  slidesPerGroupAuto: true,
+  spaceBetween: 10,
   breakpoints: {
+    786: {
+      spaceBetween: 20
+    },
     1288: {
       navigation: {
         enabled: true
       },
-      slidesToShow: 4,
-      slidesToScroll: 4
+      spaceBetween: 20
+      // slidesPerGroup: 4,
+      // slidesPerView: 4,
     }
   }
 });
+
+const items = document.querySelectorAll('.advantages-item');
+for (let index = 0; index < items.length; index++) {
+  const element = items[index];
+  element.addEventListener('mouseover', function (e) {
+    const activeItem = document.querySelector('.advantages-item.active-adv');
+    if (!this.classList.contains('active-adv')) {
+      activeItem.classList.remove('active-adv');
+      this.classList.add('active-adv');
+    }
+  });
+}
 /******/ })()
 ;

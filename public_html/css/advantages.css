@@ -1,9 +1,84 @@
-.advantages_block{
-    margin-top: 100px;
+.advantages_block {
+  margin-top: 100px;
 }
-.advantages-item-desc{
-    height: 0;
-    overflow: hidden;
+.advantages_block .slider_wrap {
+  margin-top: 50px;
+}
+
+.advantages_block .swiper-wrapper{
+    padding-bottom: 40px;
+}
+.advantages_block .swiper-button-prev-custom,
+.advantages_block .swiper-button-next-custom{
+    top: 109px;
+}
+
+.advantages-item.swiper-slide {
+  width: 283px;
+  max-width: 100%;
+}
+.advantages-item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgba(255, 255, 255, 0.1)),
+      to(rgba(255, 255, 255, 0.1))
+    ),
+    rgba(127, 0, 255, 0.07);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    rgba(127, 0, 255, 0.07);
+  -webkit-backdrop-filter: blur(3.5px);
+          backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+.advantages-item-title {
+  margin-top: 14px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+.advantages-item-desc {
+  margin-top: 10px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 24px;
+}
+@media screen and (min-width: 1289px){
+    .advantages-item-desc {
+        height: 0;
+    }
+    .advantages-item:not(.active-adv) .advantages-item-content {
+        margin-top: 40px;
+    }
+    .advantages-item.active-adv .advantages-item-desc {
+        height: auto;
+    }
+}
+@media screen and (max-width: 1288px){
+    .advantages_block .swiper-button-prev-custom,
+    .advantages_block .swiper-button-next-custom{
+        display: none;
+    }
 }
 /**
  * Swiper 9.1.1

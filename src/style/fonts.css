@@ -1,4 +1,18 @@
 @font-face {
+  font-family: "Micra";
+  src: url("../upload/fonts/Micra/micra.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Micra";
+  src: url("../upload/fonts/Micra/micra_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Gilroy";
   src: url("../upload/fonts/Gilroy/Gilroy-Regular.eot");
   src: local("Gilroy Regular"), local("Gilroy-Regular"),
@@ -275,19 +289,5 @@
     url("../upload/fonts/Gilroy/Gilroy-ThinItalic.ttf") format("truetype");
   font-weight: 100;
   font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Micra";
-  src: url("../upload/fonts/Micra/micra.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Micra";
-  src: url("../upload/fonts/Micra/micra_bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
   font-display: swap;
 }

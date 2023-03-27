@@ -8,8 +8,8 @@
 .advantages_block .swiper-wrapper{
     padding-bottom: 40px;
 }
-.advantages_block .swiper-button-prev-custom,
-.advantages_block .swiper-button-next-custom{
+.advantages_block .swiper-button-prev,
+.advantages_block .swiper-button-next{
     top: 109px;
 }
 
@@ -75,8 +75,8 @@
     }
 }
 @media screen and (max-width: 1288px){
-    .advantages_block .swiper-button-prev-custom,
-    .advantages_block .swiper-button-next-custom{
+    .advantages_block .swiper-button-prev,
+    .advantages_block .swiper-button-next{
         display: none;
     }
 }

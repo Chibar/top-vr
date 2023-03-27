@@ -1,0 +1,1 @@
+import '../style/blog_main.css'

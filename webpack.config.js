@@ -17,6 +17,7 @@ module.exports = {
     desktop: `${projectPath}/js/desktop.js`,
     responsive: `${projectPath}/js/responsive.js`,
     banner_slider: `${projectPath}/js/banner_slider.js`,
+    advantages: `${projectPath}/js/advantages.js`,
   },
   output: {
     path: distPath,

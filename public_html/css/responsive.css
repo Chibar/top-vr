@@ -49,6 +49,7 @@
   }
   .sliding_menu {
     position: absolute;
+    z-index: 3;
     right: -100%;
     top: 0;
     -webkit-transition: right 0.3s ease-in-out;
@@ -125,6 +126,20 @@
        -moz-column-gap: 10px;
             column-gap: 10px;
     color: #fff;
+  }
+  .page_block{
+    padding: 0 16px
+  }
+  .page_block-header{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+  .page_block-title,
+  .page_block-desc{
+    width: 100%;
   }
 }
 

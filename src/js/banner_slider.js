@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.banner_slider .swiper', {
     // configure Swiper to use modules
     modules: [Navigation, Pagination],
 

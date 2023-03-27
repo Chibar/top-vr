@@ -13,14 +13,14 @@ const swiper = new Swiper('.banner_slider .swiper', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        bulletClass: 'swiper-pagination-bullet-custom',
-        bulletActiveClass: 'swiper-pagination-bullet-custom-active'
+        bulletClass: 'swiper-pagination-bullet',
+        bulletActiveClass: 'swiper-pagination-bullet-active'
     },
     autoHeight: true,
 
     navigation: {
-        nextEl: '.swiper-button-next-custom',
-        prevEl: '.swiper-button-prev-custom',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
         enabled: false
     },
 

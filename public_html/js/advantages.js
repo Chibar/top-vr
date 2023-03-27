@@ -8645,13 +8645,16 @@ const swiper = new core('.advantages_block .swiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    bulletClass: 'swiper-pagination-bullet-custom',
-    bulletActiveClass: 'swiper-pagination-bullet-custom-active'
+    bulletClass: 'swiper-pagination-bullet',
+    bulletActiveClass: 'swiper-pagination-bullet-active',
+    dynamicBullets: true,
+    dynamicMainBullets: 3
   },
   autoHeight: false,
   navigation: {
-    nextEl: '.swiper-button-next-custom',
-    prevEl: '.swiper-button-prev-custom'
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    enabled: false
   },
   // slidesPerGroup: 2,
   // slidesPerView: 2,
